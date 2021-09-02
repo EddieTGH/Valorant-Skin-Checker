@@ -5,6 +5,7 @@ import cv2
 from twilio.rest import Client
 
 #make sure all programs are minimized and that valorant is in a small window, not full screen ON EVERY SINGLE ACCOUNT
+#use gui automation to take 3 screenshots of skins on rotation
 
 def logIn(username, password):
     print("starting in 5 seconds")
