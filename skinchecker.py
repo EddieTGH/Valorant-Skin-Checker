@@ -57,10 +57,18 @@ def checkSkins():
     if pic3 != None:
         pic3 = pyA.center(pic3)
         pic3X, pic3Y = pic3
-        #time.sleep(1)
+        time.sleep(1)
         pyA.moveTo(pic3X, pic3Y)
-        #time.sleep(1)
+        time.sleep(1)
         pyA.click(pic3X, pic3Y)
+        print("i understand found and clicked")
+        time.sleep(1)
+        pyA.moveTo(0,0)
+        time.sleep(1)
+        pyA.moveTo(pic3X, pic3Y)
+        time.sleep(1)
+        pyA.click(pic3X, pic3Y)
+     
 
     time.sleep(2)
     pic3 = pyA.locateOnScreen('Images/store.PNG', confidence = 0.95)
